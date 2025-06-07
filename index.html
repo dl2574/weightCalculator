@@ -63,12 +63,36 @@
             </div>
         </fieldset>
 
+        <fieldset>
+            <legend>Target Weights: Input 2 of the Three</legend>
+            <!-- Goal Weight -->
+            <div class="input_group">
+                <label for="goalWeight">Weight: </label>
+                <input type="text" id="goalWeight">
+            </div>
+
+            <!-- Goal Body Fat -->
+            <div class="input_group">
+                <label for="goalFat">Body Fat %: </label>
+                <input type="text" id="goalFat">
+            </div>
+
+            <!-- Goal Muscle Mass -->
+            <div class="input_group">
+                <label for="goalMuscle">Skeletal Muscle Mass: </label>
+                <input type="text" id="goalMuscle">
+            </div>
+        </fieldset>
+
         <div>
             <button onclick="clearForm()">Clear Form</button>
             <button onclick="calculate()">Calculate</button>
         </div>
     </form>
 
+    <div id="result_container">
+    
+    </div>
 
     <script src="main.js"></script>
 </body>
